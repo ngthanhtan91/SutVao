@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11182421C3FB32700E44580 /* SUVSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11182411C3FB32700E44580 /* SUVSignUpViewController.swift */; };
 		E1BF1A251C3F9A9200718E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF1A241C3F9A9200718E51 /* AppDelegate.swift */; };
 		E1BF1A271C3F9A9200718E51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF1A261C3F9A9200718E51 /* ViewController.swift */; };
 		E1BF1A2A1C3F9A9200718E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BF1A281C3F9A9200718E51 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E11182411C3FB32700E44580 /* SUVSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SUVSignUpViewController.swift; path = Controllers/SUVSignUpViewController.swift; sourceTree = "<group>"; };
 		E1BF1A211C3F9A9200718E51 /* SutVao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SutVao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BF1A241C3F9A9200718E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BF1A261C3F9A9200718E51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E111823D1C3F9F2600E44580 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E111823E1C3F9F2F00E44580 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1BF1A301C3F9A9200718E51 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E111823F1C3F9F3400E44580 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E11182401C3FB2C500E44580 /* SignUp */,
+				E1BF1A261C3F9A9200718E51 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E11182401C3FB2C500E44580 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E11182411C3FB32700E44580 /* SUVSignUpViewController.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
 		E1BF1A181C3F9A9200718E51 = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +133,12 @@
 		E1BF1A231C3F9A9200718E51 /* SutVao */ = {
 			isa = PBXGroup;
 			children = (
+				E111823F1C3F9F3400E44580 /* Controllers */,
+				E111823E1C3F9F2F00E44580 /* Views */,
+				E111823D1C3F9F2600E44580 /* Models */,
 				E1BF1A241C3F9A9200718E51 /* AppDelegate.swift */,
-				E1BF1A261C3F9A9200718E51 /* ViewController.swift */,
 				E1BF1A281C3F9A9200718E51 /* Main.storyboard */,
 				E1BF1A2E1C3F9A9200718E51 /* Assets.xcassets */,
-				E1BF1A301C3F9A9200718E51 /* LaunchScreen.storyboard */,
 				E1BF1A331C3F9A9200718E51 /* Info.plist */,
 				E1BF1A2B1C3F9A9200718E51 /* SutVao.xcdatamodeld */,
 			);
@@ -190,6 +225,7 @@
 		E1BF1A191C3F9A9200718E51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SUV;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = MeoSoft;
@@ -262,6 +298,7 @@
 				E1BF1A2D1C3F9A9200718E51 /* SutVao.xcdatamodeld in Sources */,
 				E1BF1A271C3F9A9200718E51 /* ViewController.swift in Sources */,
 				E1BF1A251C3F9A9200718E51 /* AppDelegate.swift in Sources */,
+				E11182421C3FB32700E44580 /* SUVSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +525,7 @@
 				E1BF1A4E1C3F9A9200718E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1BF1A4F1C3F9A9200718E51 /* Build configuration list for PBXNativeTarget "SutVaoTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +534,7 @@
 				E1BF1A511C3F9A9200718E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1BF1A521C3F9A9200718E51 /* Build configuration list for PBXNativeTarget "SutVaoUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +543,7 @@
 				E1BF1A541C3F9A9200718E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
